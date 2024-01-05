@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mojolicious:
+    build:
+      context: .
+      dockerfile: ./apps/mojolicious/Dockerfile
+    volumes:
+      - ./apps/mojolicious/:/app
+    ports:
+      - ${MOJOLICIOUS_PORT}:${MOJOLICIOUS_PORT}
