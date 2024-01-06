@@ -1,6 +1,9 @@
 FROM perl
-RUN cpanm Mojolicious
 
 WORKDIR /app
 
-CMD ["tail", "-f", "/dev/null"]
+COPY ./apps/mojolicious/cpanfile .
+
+RUN cpanm --installdeps .
+
+CMD ["morbo", "--listen=http://*:3001", "./src/index.pl"]
