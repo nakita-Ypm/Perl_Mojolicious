@@ -5,6 +5,6 @@ services:
       context: ./apps/mojolicious/
       dockerfile: Dockerfile
     volumes:
-      - ./apps/mojolicious/:/app
+      - ./apps/mojolicious/:/app/
     ports:
       - ${MOJOLICIOUS_PORT}:${MOJOLICIOUS_PORT}
