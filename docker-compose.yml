@@ -2,8 +2,8 @@ version: '3'
 services:
   mojolicious:
     build:
-      context: .
-      dockerfile: ./apps/mojolicious/Dockerfile
+      context: ./apps/mojolicious/
+      dockerfile: Dockerfile
     volumes:
       - ./apps/mojolicious/:/app
     ports:

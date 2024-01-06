@@ -2,7 +2,7 @@ FROM perl
 
 WORKDIR /app
 
-COPY ./apps/mojolicious/cpanfile .
+COPY . .
 
 RUN cpanm --installdeps .
 
