@@ -1,6 +1,7 @@
 version: '3'
 services:
   mojolicious:
+    container_name: mojolicious
     build:
       context: ./apps/mojolicious/
       dockerfile: Dockerfile
