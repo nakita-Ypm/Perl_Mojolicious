@@ -1,4 +1,4 @@
 # Mojolicious
 
-## 公式ドキュメント
+## Official Document
 [Mojolicious](https://mojolicious.org/)

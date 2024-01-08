@@ -1,32 +1,31 @@
 # perl_mojolicious
 
 ## .env
-&emsp;ポート番号を指定してください。
 ```
-MOJOLICIOUS_PORT=***
+MOJOLICIOUS_PORT=3001
 ```
 
-## コンテナ立ち上げ
+## Container start
 ```
 make up
 ```
 
-## アクセス
+## Accessed by browser
 ```
 http://127.0.0.1:3001
 ```
 
-## レスポンス
+## Response
 ```
 Hello World!
 ```
 
-## アクセス
+## Accessed by browser
 ```
 http://127.0.0.1:3001/ping
 ```
 
-## レスポンス
+## Response
 ```
 {"message":"perl Mojolicious"}
 ```
