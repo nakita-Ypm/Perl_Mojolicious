@@ -12,7 +12,6 @@ up:
 down:
 	docker-compose down
 
-# コンテナに入る
 enm:
 	docker-compose exec -it mojolicious /bin/bash
 
